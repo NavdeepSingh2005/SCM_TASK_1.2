@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/college/bootstrap/bootstrap.min.css">
+    <script  src="/college/bootstrap/bootstrap.bundle.js">
+        
+    </script>
+    <style>
+    *{
+            box-sizing: border-box;
+        }
+    body{
+        background-color: #f5e3c6;
+        font-family:'Roboto',sans-serif;
+        }
+    .exit-row{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .row-column{
+        flex-basis:66.67% ;
+        padding:25px;
+        /* z-index: -1; */
+    }
+    .row-column-img{
+        flex-basis: 33.33%;
+
+    }
+    
+    #exit-plugin{
+        display:none;
+        max-width: 900px;
+        width: 100%;
+        position: fixed;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+        text-align: center;
+        border-radius:15px ;
+        box-shadow:  0 20px 30px rgba(0,0,0,0.25);
+        overflow:hidden;
+    }
+    #exit-plugin img{
+            max-width: 100%;
+            height:100%;
+            display: block;
+            width: 100%;
+            
+    }
+    .exit-content{
+        max-width: 480px;
+        margin: auto;
+        /* z-index: -2; */
+    }
+    #exit-plugin h2{
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        font-weight: 700;
+        color: #2c2c2c;
+
+    }
+    .lightbox{
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 1;
+}
+.lightbox:target{
+    display: block;
+}
+.lightbox span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    #exit-plugin p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom:20px ;
+        font-size: 1.5em;
+        color:#5e5e5e;
+
+    }
+    .btn{
+        padding:20px 25px;
+        border: none;
+        background-color: #9e513a;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    width:100%;
+    /* z-index: 2; */
+
+
+    }
+    #exit-plugin-close{
+        background-color: transparent;
+        border:none;
+        position: absolute;
+        top:0;
+        right:5px;
+        font-size: 2.5em;
+        opacity: .45;
+    }
+    #exit-plugin-close:hover{
+        opacity: 1;
+    }
+    
+    </style>
+</head>
+<body>
+   
+    <div id="exit-plugin">
+       
+        <div class="exit-inner">
+            <div class="exit-row">
+                    <div class="row-column">
+                        
+                        <div class="exit-content">
+                            <h2>Wait! If you leave now , you won't get 6 months free Membership.</h2>
+                            <p>
+                            Hey there! Before you go,we just wanted to remind you of the amazing offer you're about to miss out on.</p>
+                            <button class="btn" >Get 6 months Free</button>
+                           <button type="button" id="exit-plugin-close">&#215</button>
+                            </div>
+                            
+                        </div>
+                        
+                    <div class="row-column-img">
+                        <a href="#img">  
+                            <img src="/Fee2/adidas.png" alt=""></a> 
+                            <a href="" class="lightbox" id="img"> 
+                                <span style="background-image: url(/Fee2/adidas.png);"></span>
+                                <button type="button" id="exit-plugin-close">&#215</button>
+                            </a>
+                        
+                    </div>
+                   
+            </div>
+            
+        </div>
+        
+    </div>
+    <script>
+        const exitplugin=document.getElementById("exit-plugin");
+        const exitpluginclose=document.getElementById("exit-plugin-close");
+
+        const hideexitplugin=()=>exitplugin.style.display="none";
+        const showexitplugin=()=>exitplugin.style.display="block";
+
+        document.addEventListener("click",showexitplugin);
+        // document.addEventListener("mousemove", showexitplugin)
+        // document.addEventListener("mousemove",howexitplugin);
+        exitpluginclose.addEventListener("click",hideexitplugin);
+    </script>
+    
+</body>
+</html>

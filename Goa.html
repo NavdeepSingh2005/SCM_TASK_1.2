@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandigarh Tourism</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <style>
+        
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+nav {
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+
+section img {
+    max-width: 100%;
+}
+footer {
+    background-color: blue;
+    color:var(--secondary-color);
+    text-align: center;
+    padding: 10px;
+}
+#about{
+    color:var(--secondary-color);
+    background-color: var(--primary-color);
+}
+#attractions{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+#icon{
+   cursor: pointer; 
+   width:30px;
+}
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
+}
+.dark-theme{
+ --primary-color:#000106;
+    --secondary-color:#fff;
+}
+*{
+            box-sizing: border-box;
+        }
+    body{
+        background-color: #f5e3c6;
+        font-family:'Roboto',sans-serif;
+        }
+    .exit-row{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .row-column{
+        flex-basis:66.67% ;
+        padding:25px;
+        /* z-index: -1; */
+    }
+    .row-column-img{
+        flex-basis: 33.33%;
+
+    }
+    
+    #exit-plugin{
+        display:none;
+        max-width: 900px;
+        width: 100%;
+        position: fixed;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+        text-align: center;
+        border-radius:15px ;
+        box-shadow:  0 20px 30px rgba(0,0,0,0.25);
+        overflow:hidden;
+        z-index: 1;
+    }
+    #exit-plugin img{
+            max-width: 100%;
+            height:100%;
+            display: block;
+            width: 100%;
+            
+    }
+    .exit-content{
+        max-width: 480px;
+        margin: auto;
+        /* z-index: -2; */
+    }
+    #exit-plugin h2{
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        font-weight: 700;
+        color: #2c2c2c;
+
+    }
+    /* .lightbox{
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 1;
+}
+.lightbox:target{
+    display: block;
+}
+.lightbox span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+    #exit-plugin p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom:20px ;
+        font-size: 1.5em;
+        color:#5e5e5e;
+
+    }
+    .btn{
+        padding:20px 25px;
+        border: none;
+        background-color: #9e513a;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    width:100%;
+    /* z-index: 2; */
+
+
+    }
+    #exit-plugin-close{
+        background-color: transparent;
+        border:none;
+        position: absolute;
+        top:0;
+        right:5px;
+        font-size: 2.5em;
+        opacity: .45;
+    }
+    #exit-plugin-close:hover{
+        opacity: 1;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Goa</h1>
+        <p>Your gateway to a beautiful city</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About Goa</a></li>
+            <li><a href="#attractions">Tourist Attractions</a></li>
+           
+            <button class="login-button"    onclick="document.location='destination.html'"  style="margin-right: 20px; margin-top: -20px;cursor:pointer">BACK</button>
+            <img src="moon.png" id="icon"alt="">
+        </ul>
+    </nav>
+
+    <div id="exit-plugin">
+       
+        <div class="exit-inner">
+            <div class="exit-row">
+                    <div class="row-column">
+                        
+                        <div class="exit-content">
+                            <h2>Wait! If you leave now , you won't get 6 months free Membership.</h2>
+                            <p>
+                            Hey there! Before you go,we just wanted to remind you of the amazing offer you're about to miss out on.</p>
+                            <button class="btn" ><a href="https://www.adidas.co.in">Get 6 months Free</a></button>
+                           <button type="button" id="exit-plugin-close">&#215</button>
+                            </div>
+                            
+                        </div>
+                        
+                    <div class="row-column-img">
+                        <a href="#img">  
+                            <img src="/Fee2/adidas.png" alt=""></a> 
+                            <a href="" class="lightbox" id="img"> 
+                                <span style="background-image: url(/Fee2/adidas.png);"></span>
+                                <button type="button" id="exit-plugin-close">&#215</button>
+                            </a>
+                        
+                    </div>
+                   
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+</div> 
+</div>
+<!-- </div> -->
+
+    <section id="about">
+        <h2>About Goa</h2>
+        <table>
+            <tr>
+         <td>
+            <p>
+                Goa (Konkani pronunciation: [gõːj], Portuguese: [go.ɐ] ⓘ) is a state on the southwestern coast of India within the Konkan region, geographically separated from the Deccan highlands by the Western Ghats.[6][7] It is bound by the Indian states of Maharashtra to the north, and Karnataka to the east and south, with the Arabian Sea in the west. It is India's smallest state by area and fourth-smallest by population. Goa has the highest GDP per capita among all Indian states,[3][8] two and a half times as high as the GDP per capita of the country as a whole.[9] The Eleventh Finance Commission of India named Goa the best-placed state because of its infrastructure, and India's National Commission on Population rated it as having the best quality of life in India (based on the commission's "12 Indicators").[9] It is the second-highest ranking among Indian states in the human development index.[4]
+            </p>
+         </td>
+        <td width="50%">
+            <div class="col-md-3">
+                <div class="gallery-box">
+                    <a href="#img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/BeachFun.jpg" alt=""  width="50%"></a>
+                <a href="" class="lightbox" id="img"> 
+                    <span style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/fc/BeachFun.jpg);"></span>
+                </a>
+            
+            
+            
+            </div>
+            </div>
+        </td>
+        </tr>
+        </table>
+    
+    </section>
+
+    <section id="attractions">
+        <h2>Tourist Attractions</h2>
+        <div class="attraction">
+           <h3>Fort Aguada</h3>
+            <table>
+                <tr>
+                   <td>
+                    <p>
+                        The fort was originally constructed in 1612 to guard against the Dutch. It was a reference point for the vessels coming from Europe at that time. This old Portuguese fort stands on the beach south of Candolim, at the shore of the Mandovi River. It was initially tasked with defense of shipping and the nearby Bardez sub-district.
+
+A freshwater spring within the fort provided water supply to the ships that used to stop by. This is how the fort got its name: Aguada, meaning watery in the Portuguese language. Crews of passing ships would often visit to replenish their freshwater stores. The Aguada Fort Lighthouse erected in 1864 is the oldest of its kind in Asia. Built in 1612, it was once the grandstand of 79 cannons. It has the capacity of storing 2,376,000 gallons of water, one of the biggest freshwater storage of the time in whole of Asia. This fort is divided in two segments: the upper part acted as fort and watering station, while the lower part served as a safe berth for Portuguese ships. Whereas the upper part has a moat, underground water storage chamber, gunpowder room, lighthouse, and bastions, it also has a secret escape passage to use during time of war and emergency. The lighthouse at the initial stage is used to emit light once in 7 minutes.
+                    </p>
+                   </td>
+                    <td width="25%">  <div class="col-md-3">
+                        <div class="gallery-box">
+                            <a href="#img1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Fort_aguada.jpg" alt=""  height="200px"></a>
+                        <a href="" class="lightbox" id="img1"> 
+                            <span style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/ad/Fort_aguada.jpg);"></span>
+                        </a>
+                    
+                    
+                
+                    </div>
+                    </div></td>
+
+                </tr>
+            </table>
+            <div class="attraction">
+                <h3>Dudhsagar Falls</h3>
+                 <table>
+                     <tr>
+                        <td>
+                            <p>
+                                Dudhsagar Falls (lit. 'Sea of Milk') is a four-tiered waterfall located on the Mandovi River in the Indian state of Goa. It is 60 km from Panaji by road and is located on the Belgaum–Vasco Da Gama rail route about 46 km east of Madgaon and 80 km south of Belgaum. Dudhsagar Falls is amongst India's tallest waterfalls with a height of 310 m (1017 feet) and an average width of 30 metres (100 feet).
+
+The falls are located in the Bhagwan Mahaveer Sanctuary and Mollem National Park among the Western Ghats. The falls are a punctuation mark in the journey of the Mandovi River from the Western Ghats to Panjim where it meets the Arabian sea. The area is surrounded by deciduous forests with rich biodiversity. The falls are not particularly spectacular during the dry season but during the monsoon season, however, the falls are fed by rains and form a huge force of water.
+                            </p>
+                        </td>
+                         <td width="25%">  <div class="col-md-3">
+                             <div class="gallery-box">
+                                 <a href="#img2">
+                             <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Doodhsagar_Fall.jpg" alt=""  width="50%"></a>
+                             <a href="" class="lightbox" id="img2"> 
+                                 <span style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0b/Doodhsagar_Fall.jpg);"></span>
+                             </a>
+                         
+                         
+                     
+                         </div>
+                         </div></td>
+     
+                     </tr>
+                 </table>
+                 <div class="attraction">
+                    <h3>Cotigao Wildlife Sanctuary</h3>
+                     <table>
+                         <tr>
+                            <td>
+                                <p>
+                                    The Cotigao Wildlife Sanctuary is located in Canacona Taluka, South Goa district, of Goa, India, established in 1968. There is an eco-tourism complex at the entrance of the sanctuary that houses a nature interpretation centre, cottages, toilets, library, reception area, rescue centre, canteen, children's park, and forest ranger office.
+
+The sanctuary is known for its dense forest of tall trees, some of which reach 30 metres in height. The forest supports moist deciduous trees, semi-evergreen trees, and evergreen trees. A special feature of the sanctuary is a treetop watchtower positioned 25 metres above a watering hole where animals go to drink. The best times to visit the watchtower are dawn and dusk when animals are most likely to be visiting.[1]
+                                </p>
+                            </td>
+                             <td width="25%">  <div class="col-md-3">
+                                 <div class="gallery-box">
+                                     <a href="#img3">
+                                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Somewhere_in_the_interiors_of_Cotigao.jpg" alt=""  width="50%"></a>
+                                 <a href="" class="lightbox" id="img3"> 
+                                     <span style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9a/Somewhere_in_the_interiors_of_Cotigao.jpg);"></span>
+                                 </a>
+                             
+                             
+                         
+                             </div>
+                             </div></td>
+         
+                         </tr>
+                     </table>
+                     <button type="button" class="book-button"  onclick="document.location='book.html'">Book Now</button>
+                     
+        </div>
+        
+    </section>
+    <section id="hotels">
+        <h2>Hotels</h2>
+        <div class="hotel">
+            <h3>Sterling Goa- Varca</h3>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/73/3c/bc/evening-shot.jpg?w=1200&h=-1&s=1" height="200" alt="Hotel Name">
+         
+          <p>Take a trip back to history at Sterling Goa Varca, our resort located just near where Vasco Da Gama discovered the sea route to India. Head out to the Varca beach, which is just a stone’s throw away, indulge in cruises and dolphin watching, or revitalize yourself within the luxurious resort with the amenities and our staff at your service.</p>
+        </div>
+    
+        <div class="hotel">
+            <h3>Novotel Goa Dona Sylvia Resort</h3>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/2d/70/70/exterior.jpg?w=1100&h=-1&s=1" alt="Hotel Name" height="200">
+           
+            <p>Overlooking Cavelossim Beach and set in 20 acres of beautifully secluded landscaped gardens, NOVOTEL GOA DONA SYLVIA RESORT brings to mind a quaint Portuguese village reminiscent of a bygone era – an architectural style that earned international acclaim for its architect, CHARLES CORREA. A truly wonderful and luxurious location for holidays, small meetings to large conferences. This luxurious 5 star beach resort is situated on the southern coast of Goa, about 45 kms from the airport and 15 kms from the Margao Railway Station.</p>
+        </div>
+        <div class="hotel">
+            <h3>Caravela Beach Resort</h3>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/11/2c/c4/caravela-beach-resort.jpg?w=1200&h=-1&s=1" height="200" alt="Hotel Name">
+          
+           <p>The Caravela Beach Resort is an independent ‘5-Star Deluxe’ beach resort comprising of 201 rooms, several of which have direct sea-views. (The Resort was previously affiliated with Renaissance Hotels for several years). The Caravela is designed by the world famous architects WATG (who also designed the Atlantis Resorts, Sun City, the Bellagio and Wynn in Las Vegas). The Resort is located on the powdery white sands of Varca Beach, South-Goa. The Caravela is a 45-minute car ride from Goa’s Dabolim Airport and is built on a 23-acre estate, with a large golf course and a 275-meter long beach-front.</p>
+        </div>
+        
+    </section>
+
+   
+
+    
+    <footer>
+        <p>&copy; 2023 Chandigarh Tourism</p>
+    </footer>
+    <script src="dark.js"></script>
+    <script>
+        const exitplugin=document.getElementById("exit-plugin");
+        const exitpluginclose=document.getElementById("exit-plugin-close");
+        const plugin=document.getElementById("icon")
+        
+        const hideexitplugin=()=>exitplugin.style.display="none";
+        const showexitplugin=()=>exitplugin.style.display="block";
+        plugin.addEventListener("click",showexitplugin)
+        exitpluginclose.addEventListener("click",hideexitplugin);
+        </script>
+    
+</body>
+</html>

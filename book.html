@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://previews.123rf.com/images/alexkava/alexkava1705/alexkava170500008/77303419-travel-logo-image-with-airplane-and-earth.jpg"  type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+<style>   
+
+@media(max-width:991px){
+    .card{
+        position: relative;
+        left:30px;
+        width:100%;
+        display: block;
+    }
+}
+.nav-item{
+        margin-left: 100px;
+        font-size: 100%vw;
+        font-weight: 700;
+    }
+</style>
+</head>
+
+<body>
+    <div id="container">
+        <section class="header">
+        <nav class="navbar navbar-expand-sm  navbar-info">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"><img src="https://previews.123rf.com/images/alexkava/alexkava1705/alexkava170500008/77303419-travel-logo-image-with-airplane-and-earth.jpg" height="100px" width="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="book.html" class="nav-link">Book</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="destination.html" role="button" data-bs-toggle="dropdown">Packages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="mumbai.html" class="dropdown-item">Mumbai</a></li>
+                                <li><a href="Chandigarh.html" class="dropdown-item">Chandigarh</a></li>
+                                <li><a href="Goa.html" class="dropdown-item">Goa</a></li>
+                                <li><a href="chennai.html" class="dropdown-item">Chennai</a></li>
+                                <li><a href="jaipur.html" class="dropdown-item">Jaipur</a></li>
+                                <li><a href="kolkata.html" class="dropdown-item">Kolkata</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="book.html#review" class="nav-link">Review</a>
+                        </li>
+                    </ul>
+                    <img src="moon.png"  id="icon" alt="">
+                </div>
+            </div>
+        </nav>
+        </section>
+    </div>
+            <section class="book">
+                <div class="containers">
+                    <div class="main-text">
+                        <h1>Book</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="card">
+                                <img src="https://img.freepik.com/premium-vector/travel-online-booking-service-app-smartphone-internet-ecommerce-trip-planning-travel-equipment-luggage-tourism-booking-app-concept-use-website-mobile-app-vector-illustration_473922-275.jpg?w=900" width="500px"height=500px alt="">
+                            </div>
+                        </div>
+                         <div class="col-md-6"  style="text-align: right;">
+                        <form action=""  class="book-form" onsubmit="submitFunction()">
+                           
+                            <select name="fruits" class="book-control">
+                                <option value="Apple">Mumbai</option>
+                                <option value="Banana">Chandigarh</option>
+                                <option value="Cherry">Jaipur</option>
+                                <option value="Cherry">Goa</option>
+                                <option value="Cherry">Kolkata</option>
+                                <option value="Cherry">Chennai</option>
+                                
+                            </select><br><br>
+                            <select name="fruits" class="book-control">
+                                <option value="Apple">  1</option>
+                                <option value="Banana">2</option>
+                                <option value="Cherry">3</option>
+                                <option value="Cherry">4</option>
+                                <option value="Cherry">5</option>
+                                <option value="Cherry">6</option>
+                            </select><br><br>
+                          
+                            <input type="date" class="book-control" placeholder="Arrivals" required onfocus="myFunction(this)"><br><br>
+                            <input type="date"class="book-control" placeholder="Leaving" required onfocus="myFunction(this)"><br><br>
+                            <textarea name="book-control"  cols="50" rows="10" width="50%" placeholder="Enter your Name & Details" onfocus="myFunction(this)"></textarea><br><br>
+                        <button type="button" class="book-button"  onsubmit="submitFunction()" onclick="submitFunction()"
+                        onclick="document.location='plugin.html'">Submit</button>
+                        
+                        </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        
+            </section>
+        </section>
+        <section class="user-feedback" id="review">
+          <h1>User Review</h1>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="user-review">
+                          <p>
+      
+                              Rating: ★★★★★
+                          I recently booked a vacation package through this tourism website, and I was thoroughly impressed with the level of service and attention to detail. The website's user-friendly interface made it easy to browse and select my travel options. What truly stood out was the exceptional customer support; the team promptly answered all my queries and ensured my itinerary was tailored to my preferences. The trip went off without a hitch, and I couldn't be happier with the overall experience. I highly recommend this website for its professionalism and commitment to customer satisfaction.</p>
+                      <h5>Pravel Sharma</h5>
+                      <small>Mumabi</small>
+                      </div>
+                      <img src="user1.jpg" alt="">
+                  </div>
+                  <div class="col-md-4">
+                      <div class="user-review">
+                          <p>
+      
+                              Rating: ★★★★★
+                              
+                              I had the pleasure of working with the management team behind this tourism website, and I can't sing their praises enough. Their commitment to customer satisfaction is exceptional. When I had to make changes to my travel dates due to unforeseen circumstances, they went above and beyond to accommodate my request, without any additional charges. Their flexibility and willingness to assist made me feel valued as a customer. I had a fantastic trip, and it's all thanks to their dedication and professionalism. I wholeheartedly recommend this website for anyone seeking a seamless and enjoyable travel experience.</p>
+                      <h5>Pravel Sharma</h5>
+                      <small>Mumabi</small>
+                      </div>
+                      <img src="user2.jpg" alt="">
+                  </div>
+              <div class="col-md-4">
+                  <div class="user-review">
+                      <p>
+      
+                          Rating: ★★★★★
+                          
+                          Booking my family vacation through this tourism website was a breeze. The website's intuitive design made it simple to compare prices, explore different destinations, and customize our trip. I appreciated the transparent pricing and the availability of various travel options. What sets this website apart is its efficient management team. They provided timely updates, arranged seamless transfers, and ensured our accommodations were top-notch. Thanks to them, our vacation was not only memorable but also stress-free. I'll definitely be using this platform for my future travel plans.</p>
+                  <h5>Pravel Sharma</h5>
+                  <small>Mumabi</small>
+                  </div>
+                  <img src="user3.jpg" alt="">
+              </div>
+              </div>
+          </div>
+        </section>
+            <section class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3"> <img src="https://previews.123rf.com/images/alexkava/alexkava1705/alexkava170500008/77303419-travel-logo-image-with-airplane-and-earth.jpg" height="100px"  class="footer-logo"alt="">
+                            <p>A tourism company is like a gateway to endless adventures and unforgettable</div>
+                        <div class="col-md-3">
+                            <h4>Features</h4>
+                            <ul>
+                            <li><p>Deals & Offers</p> </li>
+                            <li><p>Customer Satisfaction</p></li>
+                            <li><p>Cancellation & refund policies</p></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Quick Contact us</h4>
+                            
+                                <p><i class="fa fa-phone-square" ></i>+91 887843673</p>        
+                                <p><i class="fa fa-envelope"> </i>hello@example.com</p>
+                                <p><i class="fa fa-home"></i>xyz Road,ABC city </p>
+                            
+                        
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Follow us on</h4>
+                           <div class="social-links">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        
+    </div>
+                    
+                        </div><hr>
+                            &copy;2023.All rights are Reserved
+                    </div>
+                </div>
+              </section>
+              <script src="dark.js"></script>
+              <script>
+                function myFunction(x) {
+                x.style.background = "yellow";
+                }
+                function submitFunction() {
+                alert("The form was submitted");
+                }
+                function my() {
+                    alert("You pressed a key inside the input field");
+                    }
+                </script>
+            </body>
+            </html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandigarh Tourism</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <style>
+        
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+nav {
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+
+section img {
+    max-width: 100%;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+#about{
+    color:var(--secondary-color);
+    background-color: var(--primary-color);
+}
+#attractions{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+#icon{
+   cursor: pointer; 
+   width:30px;
+}
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
+}
+.dark-theme{
+ --primary-color:#000106;
+    --secondary-color:#fff;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Kolkata</h1>
+        <p>Your gateway to a beautiful city</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About Kolkata</a></li>
+            <li><a href="#attractions">Tourist Attractions</a></li>
+           
+            <button class="login-button" onclick="document.location='destination.html'" style="margin-right: 20px; margin-top: -20px;cursor:pointer">BACK</button>
+            <img src="moon.png" id="icon"alt="">
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Kolkata</h2>
+        <table>
+            <tr>
+        <td>
+            <p>
+                Kolkata also known as Calcutta /kælˈkʌtə/[14][15] which was the official name until 2001) is the capital and largest city of the Indian state of West Bengal. It lies on the eastern bank of the Hooghly River, 80 km (50 mi) west of the border with Bangladesh. It is the primary financial and commercial center of eastern and northeastern India.[16] Kolkata is the seventh most populous city of India with an estimated city proper population of 4.5 million (0.45 crore).[17] It is the centre of the Kolkata Metropolitan Region, one of the most populous metropolitan areas in the world with a population of over 15 million (1.5 crore) residents. Kolkata is the de facto cultural capital of India and historically and culturally significant city in the historic region of Bengal.[1][18][19] It is the second largest Bengali-speaking city in the world. It has the highest number of nobel laureates among all cities in India.
+
+The three villages that predated Calcutta were ruled by the Nawab of Bengal under Mughal suzerainty. After the Nawab granted the East India Company a trading licence in 1690,[20] the area was developed by the Company into Fort William. Nawab Siraj ud-Daulah occupied the fort in 1756 but was defeated at the Battle of Plassey in 1757, after his general Mir Jafar mutinied in support of the Company, and was later made the Nawab for a brief time.[21] Under company and later crown rule, Calcutta served as the de facto capital of India until 1911. Calcutta was the second largest city in the British Empire, after London,[22] and was the center of bureaucracy, politics, law, education, science and the arts in India. The city was associated with many of the figures and movements of the Bengali Renaissance. It was the hotbed of the Indian nationalist movement.[23] The University of Calcutta and its affiliated colleges produced many leading figures of South Asia.
+            </p>
+        </td>
+        <td width="50%">
+            <div class="col-md-3">
+                <div class="gallery-box">
+                    <a href="#img2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Kolkata_City_skyline_from_Hoogly_bridge.jpg" alt=""  width="50%"></a>
+                <a href="" class="lightbox" id="img2"> 
+                    <span style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c7/Kolkata_City_skyline_from_Hoogly_bridge.jpg);"></span>
+                </a>
+            
+            
+            
+            </div>
+            </div>
+        </td>
+        </tr>
+        </table>
+    
+    </section>
+
+    <section id="attractions">
+        <h2>Tourist Attractions</h2>
+        <div class="attraction">
+           <h3>Victoria Memorial:</h3>
+            <table>
+                <tr>
+                    <td>
+                        <p>
+                            The Victoria Memorial is a large marble building on the Maidan in Central Kolkata, having its entrance on the Queen's Way. It was built between 1906 and 1921 by the Government of India. It is dedicated to the memory of Victoria, Empress of India from 1876 to 1901. It is the largest monument to a monarch anywhere in the world, it stands in 64 acres of gardens and is now a museum under the control of the Ministry of Culture.[1] Possessing prominent features of the Anglo-Indian architecture of the imperial era, it has evolved into one of the most popular attractions in the city.
+                        </p>
+                    </td>
+                    <td width="25%">  <div class="col-md-3">
+                        <div class="gallery-box">
+                            <a href="#img2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Victoria_Memorial_situated_in_Kolkata.jpg" alt=""  height="200px"></a>
+                        <a href="" class="lightbox" id="img2"> 
+                            <span style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/81/Belur_Math%2C_Howrah.jpg);"></span>
+                        </a>
+                    
+                    
+                
+                    </div>
+                    </div></td>
+
+                </tr>
+            </table>
+            <div class="attraction">
+                <h3>Kalighat Kali Temple</h3>
+                 <table>
+                     <tr>
+                        <td>
+                            <p>
+                                Kalighat Kali Temple is a Hindu temple in Kalighat, Kolkata, West Bengal, India dedicated to the Hindu goddess Kali.[1] It is one of the Shakti Peethas.
+
+Kalighat was a Ghat (landing stage) sacred to Kali on the old course (Adi Ganga) of the Hooghly river (Bhāgirathi) in the city of Kolkata. The name Kolkata is said to have been derived from the word Kalikata devi of Kalighat Temple. The river over a period of time has moved away from the temple. The temple is now on the banks of a small canal called Adi Ganga which connects to the Hooghly. The Adi Ganga was the original course of the river Hooghly. Hence the name Adi (original) Ganga.
+                            </p>
+                        </td>
+                         <td width="25%">  <div class="col-md-3">
+                             <div class="gallery-box">
+                                 <a href="#img2">
+                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Kalighat_Temple_Kolkata_India_-_panoramio.jpg" alt=""  width="50%"></a>
+                             <a href="" class="lightbox" id="img2"> 
+                                 <span style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/47/Kalighat_Temple_Kolkata_India_-_panoramio.jpg);"></span>
+                             </a>
+                         
+                         
+                     
+                         </div>
+                         </div></td>
+     
+                     </tr>
+                 </table>
+                 <div class="attraction">
+                    <h3>Belur Math:</h3>
+                     <table>
+                         <tr>
+                             <td>
+                                <p>
+                                    Belur Math (pronounced [ˈbeluɽ ˈmɔʈʰ]) is the headquarters of the Ramakrishna Math and Ramakrishna Mission, founded by Swami Vivekananda, the chief disciple of Ramakrishna Paramahamsa. It is located in Belur, West Bengal, India on the west bank of Hooghly River.[2] Belur Math was established in January 1897, by Swami Vivekananda who was the disciple of Sri Ramakrishna. Swami Vivekananda returned back to India from Colombo with a small group of disciples and started work on the two one at Belur, and the others at Mayavati, Almora, Himalayas called the Advaita Ashrama.[3] The temple is the heart of the Ramakrishna movement. It is notable for its architecture that fuses Hindu, Islamic, Buddhist, and Christian art and motifs as a symbol of unity of all religions. In 2003, Belur Math railway station was also inaugurated which is dedicated to Belur Math Temple.[4]
+                                </p>
+                             </td>
+                             
+                             <td width="25%">  <div class="col-md-3">
+                                 <div class="gallery-box">
+                                     <a href="#img2">
+                                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Belur_Math%2C_Howrah.jpg" alt=""  width="50%"></a>
+                                 <a href="" class="lightbox" id="img2"> 
+                                     <span style="background-image: url(https://www.trawell.in/admin/images/upload/472763834Chandigarh_Sukhna_Lake_Main.jpg);"></span>
+                                 </a>
+                             
+                             
+                         
+                             </div>
+                             </div></td>
+         
+                         </tr>
+                     </table>
+                     
+        </div>
+        
+    </section>
+
+    <section id="hotels">
+        <h2>Hotels</h2>
+        <div class="hotel">
+            <h3>Novotel Kolkata Hotel and Residences</h3>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/d1/36/b1/exterior-view.jpg?w=1100&h=-1&s=1" alt="Hotel Name" height="200">
+         
+           <p>Located on the main road connecting Netaji Subhash Chandra Bose International airport and the growing IT and commercial hub of Kolkata. Novotel Kolkata Hotel and Residences has 340 rooms with 12 suits and 48 service apartments. It also has an all day dining restaurant ‘The Square’, Sante the 24x7 bar, Blue Tokai Coffee Roasters, swimming pool, health club, spa. It also has an Executive lounge, WIFI and extensive MICE facilities which includes over 30,000 Sqft Banquet space, 12 meeting rooms, 5 ballrooms, out of which 3 grand ballrooms and the largest open air garden terrace with banqueting facilities for up to 1000 guests.</p>
+        </div>
+        <div class="hotel">
+            <h3>Taj Bengal Kolkata</h3>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/07/da/12/facade.jpg?w=1200&h=-1&s=1" alt="Hotel Name" height="200">
+        
+           <p>Taj Bengal, designed by the legendary Bob Fox, stands as an elegant Kolkata landmark. It is in close proximity to the commercial centre, Government Offices and Consulates, and must-see sights like the Victoria Memorial, Royal Calcutta Race Course, Horticulture Gardens, National Library and the Zoological Gardens. Iconic host to Heads of State, dignitaries and international business head-honchos, it is geared to the needs of the global business traveller.</p>
+        <div class="hotel">
+            <h3>Hyatt Regency Kolkata</h3>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/e9/2f/ec/outdoor.jpg?w=1200&h=-1&s=1" alt="Hotel Name" height="200">
+            
+           <p>Hyatt Regency Kolkata is a luxury business hotel in Kolkata, India. The hotel creates the feel of a private cocoon away from the complexities of modern living without giving up any of its luxuries. The hotel is located next to Salt Lake Stadium & 15 mins drive from IT hub and is a preferred business destination of East India. A tranquil retreat amid spectacular landscaped gardens, featuring 234 luxury guest rooms and suites, the hotel allows guests to relax and rejuvenate while staying in the city. Apart from all rooms having access to Wi-Fi Internet, guests on the Regency Club Floor enjoy access to the luxurious Regency Club Lounge and evening cocktail hours. Specialty restaurants like La Cucina and the 24-hour Waterside Café offer a selection of the</p>
+        </div>
+        <button type="button" class="book-button"  onclick="document.location='book.html'">Book Now</button>
+                     
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2023 Chandigarh Tourism</p>
+    </footer>
+    <script src="dark.js"></script>
+    
+</body>
+</html>

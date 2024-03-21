@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="shortcut icon" href="https://previews.123rf.com/images/alexkava/alexkava1705/alexkava170500008/77303419-travel-logo-image-with-airplane-and-earth.jpg" type="image/x-icon"> 
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/college/bootstrap/bootstrap.min.css">
+<script src="/college/bootstrap/bootstrap.bundle.min.js"></script>
+
+<style>
+   .nav-item{
+        margin-left: 100px;
+        font-size: 100%vw;
+        font-weight: 700;
+    }
+    body {
+  font-family: Arial, sans-serif;
+}
+
+.chat-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.chat-box {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: calc(100% - 70px);
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+}
+#nav{
+    background: red;
+}
+.modal-body{
+    color:black
+}
+.modal-title{
+color: black;
+}
+.exit-row{
+    display:flex;
+    flex-wrap: wrap;
+}
+.row-column{
+    flex-basis:66.67% ;
+    padding:25px;
+    /* z-index: -1; */
+}
+.row-column-img{
+    flex-basis: 33.33%;
+
+}
+
+#exit-plugin{
+    display:none;
+    max-width: 900px;
+    width: 100%;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    text-align: center;
+    border-radius:15px ;
+    box-shadow:  0 20px 30px rgba(0,0,0,0.25);
+    overflow:hidden;
+    z-index: 1;
+}
+#exit-plugin img{
+        max-width: 100%;
+        height:100%;
+        display: block;
+        width: 100%;
+        
+}
+.exit-content{
+    max-width: 480px;
+    margin: auto;
+    /* z-index: -2; */
+}
+#exit-plugin h2{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #2c2c2c;
+
+}
+/* .lightbox{
+display: none;
+position: fixed;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+background: rgba(0,0,0,0.8);
+z-index: 1;
+}
+.lightbox:target{
+display: block;
+}
+.lightbox span{
+display: block;
+width: 100%;
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+} */
+#exit-plugin p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom:20px ;
+    font-size: 1.5em;
+    color:#5e5e5e;
+
+}
+.btn{
+    padding:20px 25px;
+    border: none;
+    background-color: #9e513a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 700;
+width:100%;
+/* z-index: 2; */
+
+
+}
+#exit-plugin-close{
+    background-color: transparent;
+    border:none;
+    position: absolute;
+    top:0;
+    right:5px;
+    font-size: 2.5em;
+    opacity: .45;
+}
+#exit-plugin-close:hover{
+    opacity: 1;
+}
+
+
+</style>
+</head>
+<body>
+    <div id="container">
+        
+        <section class="header">
+         
+            <nav class="navbar navbar-expand-sm  navbar-dark" >
+               
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"><img src="https://previews.123rf.com/images/alexkava/alexkava1705/alexkava170500008/77303419-travel-logo-image-with-airplane-and-earth.jpg" height="100px" width="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="book.html" class="nav-link">Book</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="destination.html" role="button" data-bs-toggle="dropdown">Packages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="mumbai.html" class="dropdown-item">Mumbai</a></li>
+                                <li><a href="Chandigarh.html" class="dropdown-item">Chandigarh</a></li>
+                                <li><a href="Goa.html" class="dropdown-item">Goa</a></li>
+                                <li><a href="chennai.html" class="dropdown-item">Chennai</a></li>
+                                <li><a href="jaipur.html" class="dropdown-item">Jaipur</a></li>
+                                <li><a href="kolkata.html" class="dropdown-item">Kolkata</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="book.html#review" class="nav-link">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                    <img src="moon.png"  id="icon" alt="">
+                </div>
+            </div>
+        </nav>
+
+       <button class="login-button" onclick="document.location='login.html'" style="margin-right: 20px;">Login</button>
+    
+    
+    </header>
+        
+        <marquee behavior="scroll" direction="right">
+        <h1>Travel Across The Globe</h1></marquee>
+       
+        
+        <div class="content">
+        <h1>Visit <span class="changecontent"></span></h1>
+        <div class="input-group">
+            <input type="search" name="look"  class="form-control" placeholder="Enter the city or Country" required>
+            <div  class="input-group-search">
+                <button type="submit" class="input-group-text-btn">Search</button>
+            </div>
+        </div>
+        <div id="exit-plugin">
+       
+            <div class="exit-inner">
+                <div class="exit-row">
+                        <div class="row-column">
+                            
+                            <div class="exit-content">
+                                <h2>Wait! If you leave now , you won't get 6 months free Membership.</h2>
+                                <p>
+                                Hey there! Before you go,we just wanted to remind you of the amazing offer you're about to miss out on.</p>
+                                <button class="btn" >Get 6 months Free</button>
+                               <button type="button" id="exit-plugin-close">&#215</button>
+                                </div>
+                                
+                            </div>
+                            
+                        <div class="row-column-img">
+                            <a href="#img">  
+                                <img src="/Fee2/adidas.png" alt=""></a> 
+                                <a href="" class="lightbox" id="img"> 
+                                    <span style="background-image: url(/Fee2/adidas.png);"></span>
+                                    <button type="button" id="exit-plugin-close">&#215</button>
+                                </a>
+                            
+                        </div>
+                       
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+    </section>
+
+</body>
+
+
+    </section>
+  <section class="banner">
+    <div class="banner-highlights">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Get 30% on top Destination</h2>
+                    <p>Book Your tickets before 31<sup>th</sup>December and avail 30%.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="booking-btn" onclick="document.location='book.html'">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+  </section>
+  
+
+  <section class="footer">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"> <img src="https://previews.123rf.com/images/alexkava/alexkava1705/alexkava170500008/77303419-travel-logo-image-with-airplane-and-earth.jpg" height="100px"  class="footer-logo"alt="">
+                <p>A tourism company is like a gateway to endless adventures and unforgettable</div>
+            <div class="col-md-3">
+                <h4>Features</h4>
+                <ul>
+                <li><p>Deals & Offers</p> </li>
+                <li><p>Customer Satisfaction</p></li>
+                <li><p>Cancellation & refund policies</p></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>Quick Contact us</h4>
+                
+                    <p><i class="fa fa-phone-square" ></i>+91 887843673</p>        
+                    <p><i class="fa fa-envelope"> </i>hello@example.com</p>
+                    <p><i class="fa fa-home"></i>xyz Road,ABC city </p>
+                
+            
+                
+            </div>
+            <div class="col-md-3">
+                <h4>Follow us on</h4>
+                <div class="social-links">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+        
+            </div><hr>
+                &copy;2023.All rights are Reserved
+        </div>
+    </div>
+    
+    <div class="container mt-3">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Terms and Conditions
+        </button>
+         </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+          <div class="modal-content">
+        
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <h4 class="modal-title"> Terms and conditions</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+           <pre>
+            Terms and Conditions for Travel Agency
+        
+     1. Acceptance of Terms
+        
+    By accessing or using <Strong>Travel agency</Strong>,
+        you agree to comply with and be bound by these Terms and Conditions.
+        If you do not agree to these terms, please do not use the Website.
+        
+        2. Use of the Website
+        
+        2.1 You must be at least 18 years old to use this Website. 
+        By using the Website, you represent and warrant that you are at least 18 years old.
+        
+        2.2 You agree to use the Website for lawful purposes only and in a manner consistent 
+        with all applicable local, national, and international laws and regulations.
+        
+        3. User Accounts
+        
+        3.1 To access certain features of the Website, you may be required to create an account
+        . You are responsible for maintaining the confidentiality of your account information.
+        
+        3.2 You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete.
+        
+        4. Content
+        
+        4.1 The content provided on this Website is for informational purposes only. We do not guarantee the accuracy, completeness, or usefulness of any information on the Website.
+        
+        4.2 Users may contribute content to the Website. By submitting content, you grant Travel a non-exclusive, royalty-free, perpetual, and worldwide license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content.
+        
+        5. Booking and Payments
+        
+        5.1 Travel Agency may offer booking services for various tourism-related activities. By making a booking through the Website, you agree to pay the specified fees associated with the booking.
+        
+        5.2 Payment transactions are processed through secure third-party payment processors. [Your Company] does not store or have access to your payment information.
+        
+        6. Cancellation and Refund Policy
+        
+        6.1 Travel Agency may have a cancellation and refund policy. Users are encouraged to review the specific terms and conditions related to cancellations and refunds for each booking.
+        
+        7. Intellectual Property
+        
+        7.1 All content and materials on the Website, including but not limited to text, graphics, logos, images, and software, are the property of [Your Company] and are protected by copyright and other intellectual property laws.
+        
+        7.2 You may not reproduce, distribute, modify, transmit, reuse, download, repost, or use any content of the Website for commercial purposes without the express written consent of [Your Company].
+        
+        8. Privacy Policy
+        
+        8.1 Your use of the Website is also governed by our Privacy Policy, which can be found [link to Privacy Policy]. Please review the Privacy Policy to understand our practices.
+        
+        9. Limitation of Liability
+        
+        9.1 To the fullest extent permitted by applicable law, Travel Agency shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from (a) your use or inability to use the Website; (b) any unauthorized access to or use of our servers and/or any personal information stored therein; (c) any interruption or cessation of transmission to or from the Website; (d) any bugs, viruses, trojan horses, or the like that may be transmitted to or through the Website by any third party; (e) any errors or omissions in any content or for any loss or damage of any kind incurred as a result of your use of any content posted, emailed, transmitted, or otherwise made available via the Website.
+        
+        10. Governing Law
+        
+        These Terms and Conditions shall be governed by and construed in accordance with the laws of Travel.
+        
+        11. Changes to Terms
+        
+        <strong>Travel Agency</strong> reserves the right to modify or revise these Terms and Conditions at any time without notice. By using the Website after any such change, you agree to comply with and be bound by the revised terms.
+        
+        Contact Information:
+        
+        Travel Agency
+        
+        +91 887843673
+        
+        hello@example.com
+        
+        xyz Road,ABC city
+           </pre>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div> 
+        </div>
+         </div> 
+        </div>
+        
+  </section>
+  
+</div>
+<script>
+    function sendMessage() {
+  var userInput = document.getElementById('user-input').value;
+  
+  if (userInput !== '') {
+    var chatBox = document.getElementById('chat-box');
+    chatBox.innerHTML += '<p>User: ' + userInput + '</p>';
+    
+    
+    chatBox.innerHTML += '<p>Chatbot: ' + userInput + '</p>';
+    
+    document.getElementById('user-input').value = '';
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }
+}
+
+
+        const exitplugin=document.getElementById("exit-plugin");
+        const exitpluginclose=document.getElementById("exit-plugin-close");
+        const plugin=document.getElementById("icon")
+        
+        const hideexitplugin=()=>exitplugin.style.display="none";
+        const showexitplugin=()=>exitplugin.style.display="block";
+        plugin.addEventListener("click",showexitplugin)
+        exitpluginclose.addEventListener("click",hideexitplugin);
+
+  </script>
+</body>
+</html> 
