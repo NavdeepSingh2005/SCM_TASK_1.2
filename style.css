@@ -155,7 +155,7 @@ display: block;
     box-shadow: none !important;
 }
 .input-group-text-btn{
-    width:100px;
+    width:101px;
     height: 50px;
     background-image: linear-gradient(#00ff7e,#1f3d90);
     border: 0 !important;
